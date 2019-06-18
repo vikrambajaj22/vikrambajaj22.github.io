@@ -1,0 +1,9 @@
+body {
+  background-color: #263238;
+}
+
+#welcome-header {
+  font-family: "Amatic SC";
+  text-align: center;
+  color: white;
+}
