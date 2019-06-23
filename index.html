@@ -23,16 +23,44 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!--Import typed.js for animated text-->
+    <script type="text/javascript" src="js/typed.js"></script>
     <title>Vikram Bajaj</title>
   </head>
 
   <body>
+    <nav>
+      <a href="index.html">Home</a> / <a href="about.html">About</a> /
+      <a href="projects.html">Projects</a>
+    </nav>
     <div class="row">
       <div class="col s12 m6 l6 push-m3 push-l3">
         <h1 id="welcome-header">Hey there! I'm Vikram</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col s12 m6 l6 push-m3 push-l3">
+        <h2 id="typed-text"></h2>
+      </div>
+    </div>
+    <!--Setting the text options for animation-->
+    <script type="text/javascript">
+      var options = {
+        strings: [
+          "I love Data",
+          "I love Machine Learning",
+          "I love Data Science",
+          "I love Computer Vision",
+          "I love NLP"
+        ],
+        smartBackspace: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        showCursor: false
+      };
+      var typed = new Typed("#typed-text", options);
+    </script>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>

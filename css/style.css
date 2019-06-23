@@ -1,9 +1,30 @@
-body {
-  background-color: #303e4d;
+/* theme section */
+body,
+nav {
+  background-color: white;
+}
+
+nav,
+nav a,
+#typed-text {
+  color: #64ffda;
 }
 
 #welcome-header {
+  color: #01579b;
+}
+
+/* non-theme related styles */
+nav {
+  font-family: "Loved by the King";
+  font-size: 2em;
+  text-align: right;
+  box-shadow: none;
+  padding-right: 20px;
+}
+
+#welcome-header,
+#typed-text {
   font-family: "Loved by the King";
   text-align: center;
-  color: white;
 }
