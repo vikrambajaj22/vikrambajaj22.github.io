@@ -20,7 +20,8 @@ ul.sidenav li a {
 
 nav,
 #intro-text,
-#footer-text {
+#footer-text,
+#copyright-text {
   color: #616161;
 }
 
@@ -62,7 +63,8 @@ ul.sidenav li a {
   min-height: 60px;
 }
 
-#intro-text {
+#intro-text,
+#copyright-text {
   font-family: "Neucha";
   text-align: center;
   font-size: large;
