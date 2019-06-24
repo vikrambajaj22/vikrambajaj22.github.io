@@ -48,10 +48,27 @@ nav {
 #typed-text {
   font-family: "Loved by the King";
   text-align: center;
+  min-height: 60px;
 }
 
 #intro-text {
   font-family: "Neucha";
   text-align: center;
   font-size: large;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-text {
+  font-family: "Loved by the King";
+  font-size: 50px;
+  color: #616161;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
 }
