@@ -40,10 +40,39 @@
   </head>
 
   <body>
-    <nav>
-      <a href="index.html">Home</a> / <a href="about.html">About</a> /
-      <a href="projects.html">Projects</a>
+    <nav class="hide-on-small-only">
+      <a href="index.html">Home</a> / <a href="work.html">Work</a> /
+      <a href="hobbies.html">Hobbies</a> /
+      <a href="projects.html">Projects</a> / <a href="books.html">Books</a> /
+      <a href="VikramBajaj_Resume.pdf" download="VikramBajaj_Resume.pdf"
+        >Resume</a
+      >
+      / <a href="contact.html">Contact</a>
     </nav>
+    <!--SideNav-->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="work.html">Work</a>
+      </li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li>
+        <a href="VikramBajaj_Resume.pdf" download="VikramBajaj_Resume.pdf"
+          >Resume</a
+        >
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a
+      href="#"
+      data-target="slide-out"
+      class="sidenav-trigger hide-on-med-and-up right"
+      ><i class="material-icons">menu</i></a
+    >
     <div class="row">
       <div class="col s12 m6 l6 push-m3 push-l3">
         <h1 id="welcome-header">Hey there! I'm Vikram</h1>
@@ -84,6 +113,13 @@
         showCursor: false
       };
       var typed = new Typed("#typed-text", options);
+    </script>
+    <!--Initialize SideNav-->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, { edge: "right" });
+      });
     </script>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>

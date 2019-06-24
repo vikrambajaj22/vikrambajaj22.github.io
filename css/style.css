@@ -12,12 +12,15 @@ nav {
   color: #01579b;
 }
 
-nav,
-nav a {
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a {
   color: #1de9b6;
 }
 
-#intro-text {
+nav,
+#intro-text,
+#footer-text {
   color: #616161;
 }
 
@@ -44,6 +47,14 @@ nav {
   padding-right: 20px;
 }
 
+ul.sidenav li a {
+  font-family: "Loved by the King";
+  font-size: 2em;
+  height: 64px;
+
+  padding-top: 10px;
+}
+
 #welcome-header,
 #typed-text {
   font-family: "Loved by the King";
@@ -64,11 +75,15 @@ footer {
 .footer-text {
   font-family: "Loved by the King";
   font-size: 50px;
-  color: #616161;
 }
 
 a:hover,
 a:active,
 a:focus {
   outline: 0;
+}
+
+a.sidenav-trigger i {
+  font-size: 40px;
+  margin: 10px;
 }
