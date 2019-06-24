@@ -4,8 +4,6 @@ nav {
   background-color: white;
 }
 
-nav,
-nav a,
 #typed-text {
   color: #64ffda;
 }
@@ -14,7 +12,30 @@ nav a,
   color: #01579b;
 }
 
+nav,
+nav a {
+  color: #1de9b6;
+}
+
+#intro-text {
+  color: #616161;
+}
+
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* non-theme related styles */
+
 nav {
   font-family: "Loved by the King";
   font-size: 2em;
@@ -27,4 +48,10 @@ nav {
 #typed-text {
   font-family: "Loved by the King";
   text-align: center;
+}
+
+#intro-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
 }

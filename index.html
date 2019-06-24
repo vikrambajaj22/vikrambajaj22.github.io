@@ -6,9 +6,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!--Import "Loved by the King" Google Font-->
+    <!--Import "Loved by the King", "Neucha" Google Fonts-->
     <link
-      href="https://fonts.googleapis.com/css?family=Loved+by+the+King&display=swap"
+      href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Neucha&display=swap"
       rel="stylesheet"
     />
     <!--Import materialize.css-->
@@ -25,6 +25,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import typed.js for animated text-->
     <script type="text/javascript" src="js/typed.js"></script>
+    <!--Load FontAwesome JS-->
+    <script src="https://kit.fontawesome.com/18f7a247c8.js"></script>
+    <!--JS function for age-->
+    <script type="text/javascript">
+      function calculate_age() {
+        var dob = new Date("April 22, 1996");
+        var diff_ms = Date.now() - dob.getTime();
+        var age_dt = new Date(diff_ms);
+        return Math.abs(age_dt.getUTCFullYear() - 1970);
+      }
+    </script>
     <title>Vikram Bajaj</title>
   </head>
 
@@ -41,6 +52,19 @@
     <div class="row">
       <div class="col s12 m6 l6 push-m3 push-l3">
         <h2 id="typed-text"></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8 l8 push-m2 push-l2">
+        <p id="intro-text">
+          I'm Vikram Bajaj, a
+          <script>
+            document.write(calculate_age());
+          </script>
+          year old Indian guy from Mumbai.<br />
+          I recently graduated from NYU with my MS in Computer Science and
+          currently stay in Brooklyn, New York!<br />
+        </p>
       </div>
     </div>
     <!--Setting the text options for animation-->
@@ -64,4 +88,10 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
+  <footer style="text-align: center;">
+    <i class="fab fa-linkedin fa-3x" style="color: #0077B5"></i>
+    <i class="fab fa-github fa-3x" style="color: #24292E"></i>
+    <i class="fab fa-instagram fa-3x"></i>
+    <i class="fab fa-facebook fa-3x" style="color: #43609C"></i>
+  </footer>
 </html>
