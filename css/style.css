@@ -1,43 +1,3 @@
-/* theme section */
-body,
-nav {
-  background-color: white;
-}
-
-#typed-text {
-  color: #64ffda;
-}
-
-#welcome-header {
-  color: #01579b;
-}
-
-nav a,
-a.sidenav-trigger i,
-ul.sidenav li a {
-  color: #1de9b6;
-}
-
-nav,
-#intro-text,
-#footer-text,
-#copyright-text {
-  color: #616161;
-}
-
-.fa-instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* non-theme related styles */
 
 nav {
@@ -56,14 +16,12 @@ ul.sidenav li a {
   padding-top: 10px;
 }
 
-#welcome-header,
-#typed-text {
+#welcome-header {
   font-family: "Loved by the King";
   text-align: center;
   min-height: 60px;
 }
 
-#intro-text,
 #copyright-text {
   font-family: "Neucha";
   text-align: center;
@@ -88,4 +46,17 @@ a:focus {
 a.sidenav-trigger i {
   font-size: 40px;
   margin: 10px;
+}
+
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

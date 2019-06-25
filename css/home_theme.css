@@ -1,0 +1,33 @@
+nav {
+  background-color: white;
+}
+
+#intro-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+#typed-text {
+  font-family: "Loved by the King";
+  text-align: center;
+  min-height: 60px;
+  color: #64ffda;
+}
+
+#welcome-header {
+  color: #01579b;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a {
+  color: #1de9b6;
+}
+
+nav,
+#intro-text,
+#footer-text,
+#copyright-text {
+  color: #616161;
+}

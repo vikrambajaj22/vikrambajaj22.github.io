@@ -1,0 +1,46 @@
+nav {
+  background-color: white;
+}
+
+#welcome-header,
+.input-field i {
+  color: #e65100 !important;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+.input-field input:focus + label,
+.input-field textarea:focus + label {
+  color: #ffc107 !important;
+}
+
+nav,
+#footer-text,
+#copyright-text,
+.input-field input,
+.input-field textarea {
+  color: #616161;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #ffc107 !important;
+  box-shadow: 0 1px 0 0 #ffc107 !important;
+}
+
+.input-field input,
+.input-field textarea,
+label {
+  font-family: "Neucha";
+  font-size: large;
+}
+
+button {
+  background: white !important;
+  color: #e65100 !important;
+}
+
+.submit {
+  margin-right: 10px;
+}

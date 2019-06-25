@@ -1,0 +1,31 @@
+nav {
+  background-color: white;
+}
+
+#welcome-header {
+  color: #4caf50;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a {
+  color: #00e676;
+}
+
+nav,
+#footer-text,
+#copyright-text,
+#thank-you-text {
+  color: #616161;
+}
+
+.btn {
+  background: white !important;
+  color: #4caf50 !important;
+}
+
+#thank-you-text {
+  text-align: center;
+  font-family: "Neucha";
+  font-size: large;
+}
