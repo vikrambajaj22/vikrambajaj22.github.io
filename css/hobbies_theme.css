@@ -1,0 +1,40 @@
+nav {
+  background-color: white;
+}
+
+#welcome-header {
+  color: #e91e63;
+}
+
+.active {
+  background: #e91e63;
+  color: white;
+}
+
+.filters {
+  text-align: center;
+}
+
+#hobbies-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+a {
+  color: #e040fb;
+}
+
+nav,
+#hobbies-text,
+#footer-text,
+#copyright-text {
+  color: #616161;
+}
+
+.chip {
+  cursor: pointer;
+}
