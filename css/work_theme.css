@@ -1,0 +1,65 @@
+nav {
+  background-color: white;
+}
+
+#work-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+p,
+ul {
+  font-family: "Neucha";
+  text-align: justify;
+  font-size: medium;
+}
+
+li {
+  list-style-type: circle !important;
+}
+
+#welcome-header {
+  color: #37474f;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+a {
+  color: #26c6da;
+}
+
+nav,
+#intro-text,
+#footer-text,
+#copyright-text {
+  color: #616161;
+}
+
+.filters {
+  text-align: center;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  background: white;
+  color: #26c6da;
+}
+
+.active,
+.active:focus {
+  background: #37474f;
+  color: white;
+}
+
+.experience,
+.skills,
+.certifications {
+  display: none;
+}
+
+.subtitle {
+  color: #757575;
+}

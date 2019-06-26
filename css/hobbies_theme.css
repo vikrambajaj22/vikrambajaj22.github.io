@@ -21,6 +21,12 @@ nav {
   font-size: large;
 }
 
+p {
+  font-family: "Neucha";
+  text-align: justify;
+  font-size: medium;
+}
+
 nav a,
 a.sidenav-trigger i,
 ul.sidenav li a,
