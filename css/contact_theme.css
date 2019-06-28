@@ -39,6 +39,8 @@ label {
 button {
   background: white !important;
   color: #e65100 !important;
+  font-family: "Neucha";
+  font-size: medium;
 }
 
 .submit {
