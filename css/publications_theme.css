@@ -8,7 +8,9 @@ nav {
   font-size: large;
 }
 
-p {
+p,
+a,
+.btn {
   font-family: "Neucha";
   text-align: justify;
   font-size: medium;
