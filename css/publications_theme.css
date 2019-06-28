@@ -1,0 +1,62 @@
+nav {
+  background-color: white;
+}
+
+#publications-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+p {
+  font-family: "Neucha";
+  text-align: justify;
+  font-size: medium;
+}
+
+#welcome-header {
+  color: #d32f2f;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+.publications-button,
+a {
+  color: #ff8a80 !important;
+}
+
+nav,
+#publications-text,
+#footer-text,
+#copyright-text,
+p {
+  color: #616161;
+}
+
+.publications-button {
+  background: white;
+}
+
+.publications-button:hover,
+.publications-button:focus {
+  background: #d32f2f;
+  color: white;
+}
+
+.filters {
+  text-align: center;
+}
+
+.chip {
+  cursor: pointer;
+}
+
+.subtitle-text {
+  color: #757575;
+}
+
+.active {
+  background: #d32f2f;
+  color: white;
+}
