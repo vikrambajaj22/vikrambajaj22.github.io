@@ -9,7 +9,7 @@ nav {
 }
 
 p,
-a,
+.card-action a,
 .btn {
   font-family: "Neucha";
   text-align: justify;
