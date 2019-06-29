@@ -1,0 +1,70 @@
+nav {
+  background-color: white;
+}
+
+#projects-text {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+p,
+.card-action a,
+.btn,
+ul {
+  font-family: "Neucha";
+  text-align: left;
+  font-size: medium;
+}
+
+#welcome-header {
+  color: #ffc107;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+.projects-button,
+a {
+  color: #ef6c00 !important;
+}
+
+nav,
+#projects-text,
+#footer-text,
+#copyright-text,
+p {
+  color: #616161;
+}
+
+.projects-button {
+  background: white;
+}
+
+.projects-button:hover,
+.projects-button:focus {
+  background: #ffc107;
+  color: white;
+}
+
+.filters {
+  text-align: center;
+}
+
+.chip {
+  cursor: pointer;
+}
+
+.subtitle-text {
+  color: #757575;
+}
+
+.active {
+  background: #ffc107;
+  color: white;
+}
+
+.card-image img {
+  max-width: 150px;
+  max-height: 150px;
+}

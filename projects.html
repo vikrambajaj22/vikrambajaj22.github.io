@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import "Loved by the King", "Neucha" Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <!--Import style.css and projects_theme.css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects_theme.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import typed.js for animated text-->
+    <script type="text/javascript" src="js/typed.js"></script>
+    <!--Load FontAwesome JS-->
+    <script src="https://kit.fontawesome.com/18f7a247c8.js"></script>
+    <!--Load JQuery for filtering divs-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <title>Vikram Bajaj - Projects</title>
+  </head>
+
+  <body>
+    <nav class="hide-on-small-only">
+      <a href="index.html">Home</a> / <a href="work.html">Work</a> /
+      <a href="hobbies.html">Hobbies</a> /
+      <a href="projects.html">Projects</a> /
+      <a href="publications.html">Publications</a> /
+      <a href="books.html">Books</a> /
+      <a href="VikramBajaj_Resume.pdf" download="VikramBajaj_Resume.pdf"
+        >Resume</a
+      >
+      / <a href="contact.html">Contact</a>
+    </nav>
+    <!--SideNav-->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="work.html">Work</a>
+      </li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li>
+        <a href="VikramBajaj_Resume.pdf" download="VikramBajaj_Resume.pdf"
+          >Resume</a
+        >
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a
+      href="#"
+      data-target="slide-out"
+      class="sidenav-trigger hide-on-med-and-up right"
+      ><i class="material-icons">menu</i></a
+    >
+    <div class="row">
+      <div class="col s12 m6 l6 push-m3 push-l3">
+        <h1 id="welcome-header">My Projects</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8 l8 push-m2 push-l2">
+        <p id="projects-text">
+          Most of my projects involve the use of Machine Learning, Computer
+          Vision and Data Science.<br />
+          Feel free to check them out on GitHub or browse through them below!
+          <br /><br />
+          <a href="https://www.github.com/vikrambajaj22" target="_blank">
+            <button class="btn projects-button">
+              My GitHub Profile
+              <i class="fab fa-github right"></i></button
+          ></a>
+        </p>
+      </div>
+    </div>
+    <div class="row filters">
+      <div class="col s12 m10 l10 push-m1 push-l1">
+        <div class="chip active" id="all">all</div>
+        <div class="chip" id="machine-learning">machine learning</div>
+        <div class="chip" id="deep-learning">deep learning</div>
+        <div class="chip" id="computer-vision">computer vision</div>
+        <div class="chip" id="natural-language-processing">
+          natural language processing
+        </div>
+        <div class="chip" id="data-science">data science</div>
+        <div class="chip" id="big-data">big data</div>
+        <div class="chip" id="information-visualization">
+          information visualization
+        </div>
+        <div class="chip" id="information-retrieval">information retrieval</div>
+        <div class="chip" id="databases-sql">databases / sql</div>
+        <div class="chip" id="cloud-computing">cloud computing</div>
+        <div class="chip" id="android-app-dev">android app dev</div>
+        <div class="chip" id="web-dev">web dev</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8 l8 push-m2 push-l2">
+        <div class="row" id="parent">
+          <div class="col s12 m12 l12 information-visualization">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/firewatch.JPG" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Firewatch: Visualizing U.S. Wildfire Data</b><br />
+                    <span class="subtitle-text">D3.js, Tableau</span>
+                    <br /><br />
+                    Used D3.js and Tableau to develop interactive visualizations
+                    (choropleth maps, bar charts and line charts) for U.S.
+                    wildfire data
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/vikrambajaj22/Firewatch-Visualizing-U.S.-Wildfire-Data"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 cloud-computing machine-learning">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/musicloud.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b
+                      >MusiCloud: A Cloud-Based Music and Concert Recommendation
+                      System</b
+                    ><br />
+                    <span class="subtitle-text"
+                      >AWS Services, Python, Node.js</span
+                    >
+                    <br /><br />
+                    Led a team to develop a conversational bot that recommends
+                    music and upcoming concerts, using AWS Services and the
+                    Songkick API
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/vikrambajaj22/aws-musiCloud"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 computer-vision machine-learning">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/mask-it.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Mask-it: Applying Snapchat-like Filters on Face Images</b
+                    ><br />
+                    <span class="subtitle-text">Python</span>
+                    <br /><br />
+                    Implemented the overlaying of Snapchat-like filters on face
+                    images: face detection, landmark detection, mask morphing
+                    and alpha blending
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/My-Machine-Learning-Projects/Mask-it"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 databases-sql web-dev">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/nyu-network.jpg" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>NYU Network: A University Social Network</b><br />
+                    <span class="subtitle-text">
+                      MySQL, PHP, HTML, CSS, JavaScript</span
+                    >
+                    <br /><br />
+                    Created a social network prototype; features: sending friend
+                    requests, creating posts, likes, dislikes, updating user
+                    profile, viewing activity feed
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/vikrambajaj22/NYU-Network"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 data-science machine-learning">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/global-temp-change-pred.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Global Temperature Change Prediction</b><br />
+                    <span class="subtitle-text"> Python</span>
+                    <br /><br />
+                    Predicted the temperature of a given city across a specific
+                    time period, using an ARIMA model for time series
+                    forecasting, and performed exploratory analysis of the
+                    impact of increasing amounts of pollution and Greenhouse
+                    gases on temperature change
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/My-Machine-Learning-Projects/Global-Temperature-Change-Prediction"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 big-data machine-learning">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/climate-change.JPG" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Climate Change and its Impact on Health</b><br />
+                    <span class="subtitle-text"
+                      >PySpark, Spark MLlib, Tableau</span
+                    >
+                    <br /><br />
+                    Leveraged Big Data tools to analyze climate change and
+                    pollution data, and study their impact on human health
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/My-Machine-Learning-Projects/Climate-Change-and-its-Impact-on-Health"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col s12 m12 l12 deep-learning machine-learning computer-vision android-app-dev"
+          >
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/ai-sight.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>AI Sight: Object Recognition on your Smartphone!</b
+                    ><br />
+                    <span class="subtitle-text">Java, XML, Caffe</span>
+                    <br /><br />
+                    Independently developed an Android app for offline object
+                    recognition (available on
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.vikrambajaj.aisight"
+                      target="_blank"
+                      >Play Store</a
+                    >)
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="http://www.vikrambajaj.me/AI_Sight.html"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 web-dev">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/web-dev.jpg" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Websites I've Developed</b><br />
+                    <span class="subtitle-text">HTML, CSS, JavaScript</span>
+                    <br /><br />
+                    Apart from my own website, I have also developed multiple
+                    other websites:
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="http://www.varunbajaj.me" target="_blank"
+                        >varunbajaj.me</a
+                      >: a portfolio website for a Game Designer
+                    </li>
+                    <li>
+                      <a href="http://www.krafterrz.com" target="_blank"
+                        >krafterrz.com</a
+                      >: a company website for a start-up
+                    </li>
+                    <li>
+                      <a href="http://www.ranadpharma.com" target="_blank"
+                        >ranadpharma.com</a
+                      >: a company website for a Kuwait-based pharmaceutical
+                      company
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col s12 m12 l12 information-retrieval machine-learning natural-language-processing"
+          >
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/snippet.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Search Result Snippet Generation</b><br />
+                    <span class="subtitle-text">Python</span>
+                    <br /><br />
+                    A study of various query-independent and query-dependent
+                    techniques for generating web search result snippets
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/vikrambajaj22/Snippet-Generation"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col s12 m12 l12 information-retrieval natural-language-processing"
+          >
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/viki.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Viki: A Web Search Engine</b><br />
+                    <span class="subtitle-text">Python</span>
+                    <br /><br />
+                    Built a fully-functional web search engine from scratch (a
+                    focused web crawler, an indexer with varbyte compression,
+                    and a query processor)
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/vikrambajaj22/Spidey-Focused-Web-Crawler"
+                    target="_blank"
+                    >View Crawler (Spidey) <i class="fas fa-arrow-right"></i></a
+                  ><br />
+                  <a
+                    href="https://github.com/vikrambajaj22/Indexer"
+                    target="_blank"
+                    >View Indexer <i class="fas fa-arrow-right"></i></a
+                  ><br />
+                  <a
+                    href="https://github.com/vikrambajaj22/Viki-Query-Processor"
+                    target="_blank"
+                    >View Query Processor <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l12 computer-vision machine-learning">
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/emotion.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Face Emotion Recognition</b><br />
+                    <span class="subtitle-text">MATLAB</span>
+                    <br /><br />
+                    A project on emotion recognition using various databases
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/My-Machine-Learning-Projects/Face-Emotion-Recognition"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col s12 m12 l12 natural-language-processing machine-learning"
+          >
+            <div class="card horizontal">
+              <div class="card-image valign-wrapper">
+                <img src="images/projects/quora-question-pairs.png" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>
+                    <b>Sentence Similarity Estimation</b><br />
+                    <span class="subtitle-text">Python</span>
+                    <br /><br />
+                    My attempt at solving the
+                    <a
+                      href="https://www.kaggle.com/c/quora-question-pairs"
+                      target="_blank"
+                      >Quora Question Pairs</a
+                    >
+                    challenge on Kaggle
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://github.com/My-Machine-Learning-Projects/Quora-Question-Pairs-Challenge-Kaggle"
+                    target="_blank"
+                    >View Project <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Initialize SideNav-->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, { edge: "right" });
+      });
+    </script>
+    <!--JQuery for filtering divs-->
+    <script>
+      var $btns = $(".chip").click(function() {
+        if (this.id == "all") {
+          $("#parent > div").fadeIn(450);
+        } else {
+          var $el = $("." + this.id).fadeIn(450);
+          $("#parent > div")
+            .not($el)
+            .hide();
+        }
+        $btns.removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+  <footer>
+    <a href="https://www.linkedin.com/in/vikrambajaj22" target="_blank"
+      ><i class="fab fa-linkedin fa-3x" style="color: #0077B5"></i
+    ></a>
+    <span class="footer-text">/</span>
+    <a href="https://www.github.com/vikrambajaj22" target="_blank"
+      ><i class="fab fa-github fa-3x" style="color: #24292E"></i
+    ></a>
+    <span class="footer-text">/</span>
+    <a href="https://www.twitter.com/vikram_bajaj" target="_blank"
+      ><i class="fab fa-twitter fa-3x" style="color: #1AB2E8"></i
+    ></a>
+    <span class="footer-text">/</span
+    ><a href="https://www.instagram.com/vikrambajaj22" target="_blank"
+      ><i class="fab fa-instagram fa-3x"></i
+    ></a>
+    <span class="footer-text">/</span>
+    <a href="https://www.facebook.com/vikrambajaj22" target="_blank"
+      ><i class="fab fa-facebook fa-3x" style="color: #1877F2"></i
+    ></a>
+  </footer>
+  <div id="copyright-text">
+    Made with <i class="far fa-heart" style="color: red"></i> by Vikram Bajaj
+  </div>
+</html>
