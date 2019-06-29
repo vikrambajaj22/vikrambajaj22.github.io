@@ -44,7 +44,7 @@ p {
 .projects-button:hover,
 .projects-button:focus {
   background: #ffc107;
-  color: white;
+  color: white !important;
 }
 
 .filters {

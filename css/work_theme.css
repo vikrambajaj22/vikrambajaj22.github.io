@@ -51,16 +51,16 @@ ul {
   text-align: center;
 }
 
-.btn,
-.btn:hover,
-.btn:focus {
+.btn {
   background: white;
   color: #26c6da;
 }
 
 .active,
 .active:focus,
-.skillbar-title {
+.skillbar-title,
+.btn:hover,
+.btn:focus {
   background: #37474f;
   color: white;
 }

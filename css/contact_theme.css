@@ -43,6 +43,12 @@ button {
   font-size: medium;
 }
 
+.btn:hover,
+.btn:focus {
+  background: #e65100 !important;
+  color: white !important;
+}
+
 .submit {
   margin-right: 10px;
 }

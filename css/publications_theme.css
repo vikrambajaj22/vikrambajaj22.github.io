@@ -43,7 +43,7 @@ p {
 .publications-button:hover,
 .publications-button:focus {
   background: #d32f2f;
-  color: white;
+  color: white !important;
 }
 
 .filters {

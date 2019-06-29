@@ -2,7 +2,7 @@ nav {
   background-color: white;
 }
 
-#ai-sight-text {
+#text-404 {
   font-family: "Neucha";
   text-align: center;
   font-size: large;
@@ -14,20 +14,31 @@ p {
   font-size: medium;
 }
 
-#welcome-header {
-  color: #2196f3;
+#welcome-header,
+.btn {
+  color: #4caf50;
 }
 
 nav a,
 a.sidenav-trigger i,
 ul.sidenav li a {
-  color: #212121;
+  color: #b9f6ca;
 }
 
 nav,
-#ai-sight-text,
+#text-404,
 #footer-text,
 #copyright-text,
 p {
   color: #616161;
+}
+
+.btn {
+  background: white;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #4caf50;
+  color: white;
 }
