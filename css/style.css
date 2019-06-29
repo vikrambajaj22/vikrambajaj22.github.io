@@ -60,3 +60,8 @@ a.sidenav-trigger i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.chip {
+  font-family: "Neucha";
+  font-size: medium;
+}
