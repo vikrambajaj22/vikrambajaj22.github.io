@@ -12,7 +12,7 @@ nav {
   font-family: "Loved by the King";
   text-align: center;
   min-height: 60px;
-  color: #00e5ff;
+  color: #ffca28;
 }
 
 #welcome-header {
@@ -22,7 +22,7 @@ nav {
 nav a,
 a.sidenav-trigger i,
 ul.sidenav li a {
-  color: #00e5ff;
+  color: #ffca28;
 }
 
 nav,
