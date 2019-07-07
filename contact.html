@@ -151,11 +151,16 @@
     <div class="row">
       <form
         class="col s12 m6 l6 push-m3 push-l3"
-        action="https://jumprock.co/mail/vikrambajaj"
+        action="https://formsubmit.io/send/5bf1850c-ab90-4856-9113-e684bef1c065"
         method="POST"
       >
         <!--Honeypot to prevent SPAM (if field is filled, email is discarded)-->
-        <input type="text" name="trapit" value="" style="display:none" />
+        <input
+          type="text"
+          name="_formsubmit_id"
+          value=""
+          style="display:none"
+        />
         <!--Custom email subject-->
         <input
           name="subject"
@@ -182,7 +187,7 @@
           <i class="far fa-comment-alt prefix"></i>
           <textarea
             id="textarea"
-            name="message"
+            name="comment"
             class="materialize-textarea"
             required
           ></textarea>
@@ -191,8 +196,8 @@
         <!--For redirection after successful form submission-->
         <input
           type="hidden"
-          name="after"
-          value="https://vikrambajaj22.github.io/thank_you.html"
+          name="_redirect"
+          value="https://vikrambajaj.me/thank_you.html"
         />
         <button
           class="btn waves-effect waves-light right submit"
