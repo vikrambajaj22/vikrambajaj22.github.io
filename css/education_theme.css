@@ -1,0 +1,61 @@
+nav {
+  background-color: white;
+}
+
+#education-text,
+.btn {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+#welcome-header,
+.input-field i {
+  color: #8bc34a !important;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+.input-field input:focus + label,
+.input-field textarea:focus + label {
+  color: #455a64 !important;
+}
+
+nav,
+#footer-text,
+#copyright-text,
+.input-field input,
+.input-field textarea {
+  color: #616161;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #455a64 !important;
+  box-shadow: 0 1px 0 0 #455a64 !important;
+}
+
+.input-field input,
+.input-field textarea,
+label {
+  font-family: "Neucha";
+  font-size: large;
+}
+
+button {
+  background: white !important;
+  color: #8bc34a !important;
+  font-family: "Neucha";
+  font-size: medium;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #8bc34a !important;
+  color: white !important;
+}
+
+.submit {
+  margin-right: 10px;
+}
