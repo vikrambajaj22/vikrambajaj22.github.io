@@ -1,0 +1,77 @@
+nav {
+  background-color: white;
+}
+
+#education-text,
+.btn {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: large;
+}
+
+#welcome-header,
+.input-field i {
+  color: #8bc34a !important;
+}
+
+.active {
+  background: #8bc34a;
+  color: white;
+}
+
+.filters {
+  text-align: center;
+}
+
+.btn {
+  background: white;
+  color: #455a64;
+}
+
+nav a,
+a.sidenav-trigger i,
+ul.sidenav li a,
+.input-field input:focus + label,
+.input-field textarea:focus + label {
+  color: #455a64 !important;
+}
+
+nav,
+#education-text,
+#footer-text,
+#copyright-text,
+.input-field input,
+.input-field textarea {
+  color: #616161;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #455a64 !important;
+  box-shadow: 0 1px 0 0 #455a64 !important;
+}
+
+.input-field input,
+.input-field textarea,
+label {
+  font-family: "Neucha";
+  font-size: large;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #8bc34a !important;
+  color: white !important;
+}
+
+.submit {
+  margin-right: 10px;
+}
+
+.chip {
+  cursor: pointer;
+}
+
+.waves-block {
+  display: inline-block;
+}
