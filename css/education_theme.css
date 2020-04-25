@@ -14,6 +14,20 @@ nav {
   color: #8bc34a !important;
 }
 
+.active {
+  background: #8bc34a;
+  color: white;
+}
+
+.filters {
+  text-align: center;
+}
+
+.btn {
+  background: white;
+  color: #455a64;
+}
+
 nav a,
 a.sidenav-trigger i,
 ul.sidenav li a,
@@ -23,6 +37,7 @@ ul.sidenav li a,
 }
 
 nav,
+#education-text,
 #footer-text,
 #copyright-text,
 .input-field input,
@@ -43,13 +58,6 @@ label {
   font-size: large;
 }
 
-button {
-  background: white !important;
-  color: #8bc34a !important;
-  font-family: "Neucha";
-  font-size: medium;
-}
-
 .btn:hover,
 .btn:focus {
   background: #8bc34a !important;
@@ -58,4 +66,12 @@ button {
 
 .submit {
   margin-right: 10px;
+}
+
+.chip {
+  cursor: pointer;
+}
+
+.waves-block {
+  display: inline-block;
 }
