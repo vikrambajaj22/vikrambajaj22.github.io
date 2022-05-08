@@ -29,7 +29,7 @@ permalink: /work
         Click the buttons below to know more about my work life so far!
       </p>
       <div class="filters">
-        <button class="btn filter-button" id="experience">
+        <button class="btn filter-button active-button" id="experience">
           Experience
         </button>
         <button class="btn filter-button" id="skills">
@@ -543,6 +543,7 @@ permalink: /work
   <script>
     $(document).ready(function () {
       $(".materialboxed").materialbox();
+      $(".active-button").trigger("click");
     });
   </script>
   <!--JavaScript at end of body for optimized loading-->
