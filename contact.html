@@ -25,10 +25,12 @@ permalink: /contact
   </script>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
     onload="if(submitted) {window.location='/thank_you';}"></iframe>
-
+  <!-- linking Google Form elements to a custom HTML form:
+  https://medium.com/geekculture/link-your-html-form-to-a-spreadsheet-via-google-forms-9024f0611d82
+  -->
   <div class="row">
     <form class="col s12 m6 l6 push-m3 push-l3"
-      action="https://docs.google.com/forms/d/e/1FAIpQLSenEjOkYyYeWIh6cJNuoKwIXLjCV6BwBjYUgvqn3KMACohSYw/formResponse"
+      action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSenEjOkYyYeWIh6cJNuoKwIXLjCV6BwBjYUgvqn3KMACohSYw/formResponse"
       method="POST" target="hidden_iframe" onsubmit="submitted=true;">
       <div class="input-field col s12 m12 l12">
         <i class="far fa-user prefix"></i>
@@ -44,6 +46,11 @@ permalink: /contact
         <i class="far fa-comment-alt prefix"></i>
         <textarea id="textarea" name="entry.1812210981" class="materialize-textarea" required></textarea>
         <label for="textarea">Your Message</label>
+      </div>
+      <div class="input-field col s12 m12 l12">
+        <i class="far fa-robot prefix"></i>
+        <input id="captcha" name="entry.590623925" type="text" class="validate" required />
+        <label for="captcha">Math CAPTCHA: 2+3</label>
       </div>
       <button class="btn waves-effect waves-light right submit" type="submit" name="action">
         Send
