@@ -5,7 +5,7 @@ import chalk from "chalk"
 import DepGraph from "../../depgraph"
 
 export function extractDomainFromBaseUrl(baseUrl: string) {
-  const url = new URL(`http://${baseUrl}`)
+  const url = new URL(`https://${baseUrl}`)
   return url.hostname
 }
 
