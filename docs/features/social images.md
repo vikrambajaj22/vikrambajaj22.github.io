@@ -133,7 +133,7 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >   const headerWeight: FontWeight = 700
 >   const bodyWeight: FontWeight = 400
 >
->   const url = new URL(`http://${cfg.baseUrl ?? "example.com"}`)
+>   const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
 >
 >   const [header, body] = await Promise.all(
 >     [headerFont, bodyFont].map((font) =>
@@ -307,7 +307,7 @@ export const customImage: SocialImageOptions["imageStructure"] = (
 >         alignItems: "flex-start",
 >         height: "100%",
 >         width: "100%",
->         backgroundImage: `url("http://${cfg.baseUrl}/static/og-image.jpeg")`,
+>         backgroundImage: `url("https://${cfg.baseUrl}/static/og-image.jpeg")`,
 >         backgroundSize: "100% 100%",
 >       }}
 >     >
@@ -336,7 +336,7 @@ export const customImage: SocialImageOptions["imageStructure"] = (
 >         }}
 >       >
 >         <img
->           src={`"http://${cfg.baseUrl}/static/icon.jpeg"`}
+>           src={`"https://${cfg.baseUrl}/static/icon.jpeg"`}
 >           style={{
 >             position: "relative",
 >             backgroundClip: "border-box",

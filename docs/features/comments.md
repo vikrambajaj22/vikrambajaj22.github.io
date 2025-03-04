@@ -64,7 +64,7 @@ type Options = {
     categoryId: string
 
     // Url to folder with custom themes
-    // defaults to 'http://${cfg.baseUrl}/static/giscus'
+    // defaults to 'https://${cfg.baseUrl}/static/giscus'
     themeUrl?: string
 
     // filename for light theme .css file
