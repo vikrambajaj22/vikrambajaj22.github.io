@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     baseUrl: "vikrambajaj.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-    generateSocialImages: true,
+    generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
