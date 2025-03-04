@@ -38,9 +38,9 @@
 
 :root .darkmode {
   & > #dayIcon {
-    display: flex;
+    display: inline;
   }
   & > #nightIcon {
-    display: inline;
+    display: none;
   }
 }
