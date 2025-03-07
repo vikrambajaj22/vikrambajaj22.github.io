@@ -9,7 +9,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>{title}</a>
+      <a href={baseDir}><img src="/static/my-images/my-notion-face-portrait.png" alt="Logo Image" class="title-image" /><br />{title}</a>
     </h2>
   )
 }
@@ -17,6 +17,12 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 PageTitle.css = `
 .page-title {
   font-size: 1.75rem;
+  margin: 0;
+}
+
+.title-image {
+  width: 4rem;
+  height: 4rem;
   margin: 0;
 }
 `
