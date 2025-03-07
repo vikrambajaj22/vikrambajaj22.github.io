@@ -1,6 +1,7 @@
 ---
-enableToc: "false"
 title: AI Sight Privacy Policy
+tags:
+  - explorerExclude
 ---
 **Last updated January 21, 2024**
 
