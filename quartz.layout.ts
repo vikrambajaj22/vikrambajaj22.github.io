@@ -27,7 +27,7 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
+    // Component.Search(),
     Component.Darkmode(),
     // Component.Explorer({
     //   filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
@@ -46,7 +46,7 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
+    // Component.Search(),
     Component.Darkmode(),
     // Component.Explorer({
     //   filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
