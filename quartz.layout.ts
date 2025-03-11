@@ -5,7 +5,21 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "vikrambajaj22/vikrambajaj22.github.io",
+        repoId: "MDEwOlJlcG9zaXRvcnkxOTI0MzMxMjY=",
+        category: "Announcements",
+        categoryId: "DIC_kwDOC3hL5s4CnzvT",
+        inputPosition: "top",
+        strict: true,
+        mapping: "pathname",
+        darkTheme: "transparent_dark",
+        lightTheme: "transparent_dark",
+      }
+    })],
   footer: Component.Footer({
     "links": {
       "LinkdIn": "https://www.linkedin.com/in/vikrambajaj22/",
@@ -27,11 +41,11 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    // Component.Search(),
+    Component.Search(),
     Component.Darkmode(),
-    // Component.Explorer({
-    //   filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
-    // }),
+    Component.Explorer({
+      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
+    }),
   ],
   right: [
     // Component.Graph(),
@@ -46,11 +60,11 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    // Component.Search(),
+    Component.Search(),
     Component.Darkmode(),
-    // Component.Explorer({
-    //   filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
-    // }),
+    Component.Explorer({
+      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
+    }),
   ],
   right: [],
 }
