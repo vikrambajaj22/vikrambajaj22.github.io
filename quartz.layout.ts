@@ -16,7 +16,7 @@ export const sharedPageComponents: SharedLayout = {
         inputPosition: "top",
         strict: true,
         mapping: "pathname",
-        themeUrl: "https://vikrambajaj.me/static/giscus",
+        themeUrl: "https://giscus.app/themes",
         darkTheme: "transparent_dark",
         lightTheme: "transparent_dark",
       }
