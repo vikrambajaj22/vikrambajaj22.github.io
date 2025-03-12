@@ -1,2 +1,4 @@
 ---
 title: Blog
+permalink: blog
+---
