@@ -27,6 +27,7 @@ export const sharedPageComponents: SharedLayout = {
       "GitHub": "https:www.github.com/vikrambajaj22",
       "X": "https://x.com/vikram_bajaj",
       "Instagram": "https://www.instagram.com/vikrambajaj22/",
+      "Blog": "/blog/"
     }
   }),
 }

@@ -13,4 +13,4 @@ I'm Vikram Bajaj. I'm a Machine Learning Engineer and I currently work at Bloomb
 - [Instagram](https://www.instagram.com/vikrambajaj22/?hl=en) | [Art](https://www.instagram.com/artbreak_vik/?hl=en)
 - [X](https://www.x.com/vikram_bajaj)
 - [Books](books)
-- [Blog](/blog/)
+- [Blog](/blog/index)
