@@ -1,4 +1,3 @@
 ---
 title: Blog
-permalink: /blog/
 ---
