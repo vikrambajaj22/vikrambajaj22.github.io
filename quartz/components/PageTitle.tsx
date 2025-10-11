@@ -9,7 +9,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}><img src="/static/my-images/my-notion-face-portrait.png" alt="Logo Image" class="title-image" /><br />{title}</a>
+      <a href={baseDir}><img src="/static/my-images/me.png" alt="Logo Image" class="title-image" /><br />{title}</a>
     </h2>
   )
 }
