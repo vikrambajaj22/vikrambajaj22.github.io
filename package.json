@@ -1,5 +1,6 @@
 {
   "name": "@vikrambajaj22/vikrambajaj22.github.io",
+  "version": "4.0.0",
   "description": "Personal Website",
   "private": true,
   "type": "module",

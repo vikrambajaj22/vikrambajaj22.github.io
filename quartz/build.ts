@@ -1,4 +1,5 @@
 import sourceMapSupport from "source-map-support"
+import { options } from "./util/sourcemap"
 sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
@@ -15,7 +16,6 @@ import { ProcessedContent } from "./plugins/vfile"
 import { Argv, BuildCtx } from "./util/ctx"
 import { glob, toPosixPath } from "./util/glob"
 import { trace } from "./util/trace"
-import { options } from "./util/sourcemap"
 import { Mutex } from "async-mutex"
 import DepGraph from "./depgraph"
 import { getStaticResourcesFromPlugins } from "./plugins"

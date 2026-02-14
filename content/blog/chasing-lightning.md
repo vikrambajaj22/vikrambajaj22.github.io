@@ -1,10 +1,10 @@
 ---
 title: Chasing Lightning
 tags:
-  - rambling
+  - short-prose
 comments: "true"
 ---
-[![[chasing-lightning.png]]](https://www.instagram.com/p/CCzFmjdp2Iw/?igsh=MWVyZGsyaXgzaDhsZA==)
+![[chasing-lightning.png]]](https://www.instagram.com/p/CCzFmjdp2Iw/?igsh=MWVyZGsyaXgzaDhsZA==)
 
 Nature is many things: from breathtaking and awe-inspiring to havoc-wrecking and downright devastating. Today, as I stood idly by, watching a thunderstorm from my window, I realized that it can be both. A bolt of lightning, dazzling as can be, holds within it the insurmountable power to completely and utterly annihilate anything in its path.
 

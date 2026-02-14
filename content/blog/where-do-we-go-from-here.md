@@ -1,7 +1,7 @@
 ---
 title: Where Do We Go From Here?
 tags:
-  - rambling
+  - short-prose
 comments: "true"
 ---
 [![[where-do-we-go-from-here.png]]](https://www.instagram.com/p/CA3qexwDbUN/?img_index=1)

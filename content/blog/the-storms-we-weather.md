@@ -1,7 +1,7 @@
 ---
 title: The Storms We Weather
 tags:
-  - rambling
+  - short-prose
 comments: "true"
 ---
 [![[the-storms-we-weather.png]]](https://www.instagram.com/p/CPzP-41Bk1B/)
