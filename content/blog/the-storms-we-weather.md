@@ -3,6 +3,9 @@ title: The Storms We Weather
 tags:
   - short-prose
 comments: "true"
+created: 2021-06-06
+published: 2021-06-06
+modified: 2021-06-06
 ---
 [![[the-storms-we-weather.png]]](https://www.instagram.com/p/CPzP-41Bk1B/)
 

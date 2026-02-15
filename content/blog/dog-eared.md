@@ -3,6 +3,9 @@ title: Dog-Eared
 tags:
   - short-prose
 comments: "true"
+created: 2026-01-21
+published: 2026-02-14
+modified: 2026-01-21
 ---
 > How can something almost invisible be so indelible?
 

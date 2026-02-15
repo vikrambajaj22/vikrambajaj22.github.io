@@ -3,6 +3,9 @@ title: Where Do We Go From Here?
 tags:
   - short-prose
 comments: "true"
+created: 2021-05-31
+published: 2021-05-31
+modified: 2021-05-31
 ---
 [![[where-do-we-go-from-here.png]]](https://www.instagram.com/p/CA3qexwDbUN/?img_index=1)
 

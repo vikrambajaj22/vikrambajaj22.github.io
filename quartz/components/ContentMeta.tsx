@@ -29,8 +29,18 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
+      // Show both created and published dates
       if (fileData.dates) {
-        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+        if (fileData.dates.created !== fileData.dates.published) {
+          segments.push(
+            <span>
+        Written <Date date={fileData.dates.created!} locale={cfg.locale} /> |
+        Published <Date date={fileData.dates.published!} locale={cfg.locale} />
+      </span>,
+          )
+        } else {
+          segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+        }
       }
 
       // Display reading time if enabled

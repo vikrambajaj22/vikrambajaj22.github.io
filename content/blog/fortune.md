@@ -3,6 +3,9 @@ title: Fortune
 tags:
   - rambling
 comments: "true"
+created: 2025-11-22
+published: 2026-02-14
+modified: 2025-11-22
 ---
 I cracked open a fortune cookie last night, after a full meal, unsure what I was hoping for - was I looking for validation in my hopes for the future, or for something new and exciting to look forward to?
 

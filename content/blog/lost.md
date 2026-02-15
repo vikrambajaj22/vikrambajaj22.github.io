@@ -3,6 +3,9 @@ title: Lost
 tags:
   - short-prose
 comments: "true"
+created: 2024-05-12
+published: 2026-02-14
+modified: 2024-05-12
 ---
 But he wasn’t there, not completely; his eyes frozen in time and space, as if locked onto something right ahead but ever so out of reach. And though it seemed the world around him stood still, his mind raced at speeds far beyond his comprehension, leaving him chasing his overlapping thoughts, feet still firmly planted on the ground beneath. But an uncomfortable sense of familiarity started to creep in; he’s been here before. Was he really lost?
 

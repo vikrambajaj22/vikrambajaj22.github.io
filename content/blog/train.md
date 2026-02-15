@@ -3,6 +3,9 @@ title: Train
 tags:
   - short-prose
 comments: "true"
+created: 2025-08-17
+published: 2026-02-14
+modified: 2025-09-19
 ---
 And suddenly I found myself on a train I couldn’t remember boarding, with no sense of where it was headed, nor the stops along its route. Its rhythmic mechanical whir oddly familiar yet simultaneously otherworldly.
 

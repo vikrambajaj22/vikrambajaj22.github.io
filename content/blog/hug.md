@@ -3,6 +3,9 @@ title: Hug
 tags:
   - short-prose
 comments: "true"
+created: 2025-10-18
+published: 2026-02-14
+modified: 2025-10-18
 ---
 On my way to work, running late, a hug stopped me in my tracks. My frantic pace slowed as I noticed two people in a long solemn hug. Time stood still for them as they held each other - was this a long goodbye? With not much time to process, I carried on with my day, as thoughts of my own long goodbyes intermittently drifted through my already occupied mind.
 
