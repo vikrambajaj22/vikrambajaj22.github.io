@@ -29,23 +29,31 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      // Show both created and published dates
-      if (fileData.dates) {
-        if (fileData.dates.created !== fileData.dates.published) {
+      // Respect frontmatter flag to hide dates on a per-page basis.
+      // Supported frontmatter field: `hideDates: true` (boolean or string). Dates are shown by default.
+      const fm = (fileData.frontmatter ?? {}) as any
+      const hideDates = fm.hideDates === true || fm.hideDates === "true"
+
+      if (fileData.dates && !hideDates) {
+        // Show both Written (created) and Published dates when available and different.
+        const created: Date | undefined = (fileData.dates as any).created
+        const published: Date | undefined = (fileData.dates as any).published
+
+        if (created && published && created.getTime() !== published.getTime()) {
           segments.push(
             <span>
-        Written <Date date={fileData.dates.created!} locale={cfg.locale} /> |
-        Published <Date date={fileData.dates.published!} locale={cfg.locale} />
-      </span>,
+              Written <Date date={created} locale={cfg.locale} /> &nbsp;•&nbsp; Published <Date date={published} locale={cfg.locale} />
+            </span>,
           )
         } else {
+          // Fallback to the configured default date type
           segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
         }
       }
 
       // Display reading time if enabled
       if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
+        const { minutes } = readingTime(text)
         const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
           minutes: Math.ceil(minutes),
         })
