@@ -19,16 +19,17 @@ export const sharedPageComponents: SharedLayout = {
         themeUrl: "https://giscus.app/themes",
         darkTheme: "transparent_dark",
         lightTheme: "transparent_dark",
-      }
-    })],
+      },
+    }),
+  ],
   footer: Component.Footer({
-    "links": {
-      "LinkdIn": "https://www.linkedin.com/in/vikrambajaj22/",
-      "GitHub": "https://github.com/vikrambajaj22",
-      "X": "https://x.com/vikram_bajaj",
-      "Instagram": "https://www.instagram.com/vikrambajaj22/",
-      "Blog": "/blog/"
-    }
+    links: {
+      LinkedIn: "https://www.linkedin.com/in/vikrambajaj22/",
+      GitHub: "https://github.com/vikrambajaj22",
+      X: "https://x.com/vikram_bajaj",
+      Instagram: "https://www.instagram.com/vikrambajaj22/",
+      Blog: "/blog/",
+    },
   }),
 }
 
@@ -46,7 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.Explorer({
-      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
+      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude"),
     }),
   ],
   right: [
@@ -65,7 +66,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.Explorer({
-      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude")
+      filterFn: (node) => !node.file?.frontmatter?.tags?.includes("explorerExclude"),
     }),
   ],
   right: [],

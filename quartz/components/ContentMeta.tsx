@@ -31,23 +31,23 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       // Respect frontmatter flag to hide dates on a per-page basis.
       // Supported frontmatter field: `hideDates: true` (boolean or string). Dates are shown by default.
-      const fm = (fileData.frontmatter ?? {}) as any
-      const hideDates = fm.hideDates === true || fm.hideDates === "true"
+      const hideDates = fileData.frontmatter?.hideDates
 
-      if (fileData.dates && !hideDates) {
+      if (hideDates !== true && hideDates !== "true") {
         // Show both Written (created) and Published dates when available and different.
-        const created: Date | undefined = (fileData.dates as any).created
-        const published: Date | undefined = (fileData.dates as any).published
+        const { created, published } = fileData.dates ?? {}
+        const date = getDate(cfg, fileData)
 
         if (created && published && created.getTime() !== published.getTime()) {
           segments.push(
             <span>
-              Written <Date date={created} locale={cfg.locale} /> &nbsp;•&nbsp; Published <Date date={published} locale={cfg.locale} />
+              Written <Date date={created} locale={cfg.locale} /> &nbsp;•&nbsp; Published{" "}
+              <Date date={published} locale={cfg.locale} />
             </span>,
           )
-        } else {
+        } else if (date) {
           // Fallback to the configured default date type
-          segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+          segments.push(<Date date={date} locale={cfg.locale} />)
         }
       }
 

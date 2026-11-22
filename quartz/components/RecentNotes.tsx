@@ -42,6 +42,7 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
+            const date = getDate(cfg, page)
 
             return (
               <li class="recent-li">
@@ -53,9 +54,9 @@ export default ((userOpts?: Partial<Options>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
+                  {date && (
                     <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                      <Date date={date} locale={cfg.locale} />
                     </p>
                   )}
                   {opts.showTags && (

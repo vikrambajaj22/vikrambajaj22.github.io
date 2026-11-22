@@ -12,10 +12,11 @@ const defaultOptions: Options = {
   priority: ["frontmatter", "git", "filesystem"],
 }
 
-function coerceDate(fp: string, d: any): Date {
+function coerceDate(fp: string, d: MaybeDate): Date | undefined {
+  if (d === undefined || d === null) return undefined
   const dt = new Date(d)
-  const invalidDate = isNaN(dt.getTime()) || dt.getTime() === 0
-  if (invalidDate && d !== undefined) {
+  const invalidDate = isNaN(dt.getTime())
+  if (invalidDate) {
     console.log(
       chalk.yellow(
         `\nWarning: found invalid date "${d}" in \`${fp}\`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format`,
@@ -23,10 +24,10 @@ function coerceDate(fp: string, d: any): Date {
     )
   }
 
-  return invalidDate ? new Date() : dt
+  return invalidDate ? undefined : dt
 }
 
-type MaybeDate = undefined | string | number
+type MaybeDate = undefined | null | string | number | Date
 export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
   return {
@@ -45,12 +46,12 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
             for (const source of opts.priority) {
               if (source === "filesystem") {
                 const st = await fs.promises.stat(fullFp)
-                created ||= st.birthtimeMs
-                modified ||= st.mtimeMs
+                created ??= st.birthtimeMs
+                modified ??= st.mtimeMs
               } else if (source === "frontmatter" && file.data.frontmatter) {
-                created ||= file.data.frontmatter.created as MaybeDate
-                modified ||= file.data.frontmatter.modified as MaybeDate
-                published ||= file.data.frontmatter.published as MaybeDate
+                created ??= file.data.frontmatter.created
+                modified ??= file.data.frontmatter.modified
+                published ??= file.data.frontmatter.published
               } else if (source === "git") {
                 if (!repo) {
                   // Get a reference to the main git repo.
@@ -60,7 +61,7 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
                 }
 
                 try {
-                  modified ||= await repo.getFileLatestModifiedDateAsync(file.data.filePath!)
+                  modified ??= await repo.getFileLatestModifiedDateAsync(file.data.filePath!)
                 } catch {
                   console.log(
                     chalk.yellow(
@@ -87,9 +88,9 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
 declare module "vfile" {
   interface DataMap {
     dates: {
-      created: Date
-      modified: Date
-      published: Date
+      created?: Date
+      modified?: Date
+      published?: Date
     }
   }
 }

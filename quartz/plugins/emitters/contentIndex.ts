@@ -40,7 +40,7 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
   const base = cfg.baseUrl ?? ""
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<url>
     <loc>https://${joinSegments(base, encodeURI(slug))}</loc>
-    ${content.date && `<lastmod>${content.date.toISOString()}</lastmod>`}
+    ${content.date ? `<lastmod>${content.date.toISOString()}</lastmod>` : ""}
   </url>`
   const urls = Array.from(idx)
     .map(([slug, content]) => createURLEntry(simplifySlug(slug), content))
@@ -51,28 +51,19 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
 function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: number): string {
   const base = cfg.baseUrl ?? ""
 
-  const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<item>
+  const createURLEntry = (slug: SimpleSlug, content: ContentDetails, date: Date): string => `<item>
     <title>${escapeHTML(content.title)}</title>
     <link>https://${joinSegments(base, encodeURI(slug))}</link>
     <guid>https://${joinSegments(base, encodeURI(slug))}</guid>
     <description>${content.richContent ?? content.description}</description>
-    <pubDate>${content.date?.toUTCString()}</pubDate>
+    <pubDate>${date.toUTCString()}</pubDate>
   </item>`
 
   const items = Array.from(idx)
-    .sort(([_, f1], [__, f2]) => {
-      if (f1.date && f2.date) {
-        return f2.date.getTime() - f1.date.getTime()
-      } else if (f1.date && !f2.date) {
-        return -1
-      } else if (!f1.date && f2.date) {
-        return 1
-      }
-
-      return f1.title.localeCompare(f2.title)
-    })
-    .map(([slug, content]) => createURLEntry(simplifySlug(slug), content))
+    .flatMap(([slug, content]) => (content.date ? [{ slug, content, date: content.date }] : []))
+    .sort((a, b) => b.date.getTime() - a.date.getTime())
     .slice(0, limit ?? idx.size)
+    .map(({ slug, content, date }) => createURLEntry(simplifySlug(slug), content, date))
     .join("")
 
   return `<?xml version="1.0" encoding="UTF-8" ?>
@@ -119,7 +110,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       const linkIndex: ContentIndex = new Map()
       for (const [tree, file] of content) {
         const slug = file.data.slug!
-        const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
+        const date = getDate(cfg, file.data)
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
           linkIndex.set(slug, {
             title: file.data.frontmatter?.title!,
